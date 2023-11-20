@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/CSS/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    
+    <main>
+        <form action="*" method="get">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" class="texto">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" class="texto">
+                <input type="email" name="email" placeholder="E-mail" class="texto">
+                <div class="fecha">
+                    <h4>Fecha de nacimiento</h4>
+                    <input type="date" name="Fecha" placeholder="mm-dd-yyyy">
+                </div>
+                
+                <input type="text" name="domicilio" placeholder="domicilio" class="texto">
+                <div>
+                    <h4>Perfil de usuario</h4>
+                    <div class="perfil">
+                            <label for="perfil"><input type="radio" name="perfil" id="perfil"> Comprador</label>
+                            <label for="perfil"><input type="radio" name="perfil" id="perfil"> Vendedor</label>
+
+                    </div>
+                </div>
+                <h4>Intereses</h4>
+                <div class="checkbox">
+                    <label for="intereses"><input type="checkbox" name="intereses" id="intereses"> Electro</label>
+                    <label for="intereses"><input type="checkbox" name="intereses" id="intereses"> Moda</label>
+                    <label for="intereses"><input type="checkbox" name="intereses" id="intereses"> Hogar</label>
+                    <label for="intereses"><input type="checkbox" name="intereses" id="intereses"> Jugueteria</label>
+                    <label for="intereses"><input type="checkbox" name="intereses" id="intereses"> Vida sana</label>
+                </div>
+                <div class="texto">
+                    <h4>Foto de perfil</h4>
+                    <input type="file" name="foto" accept=".jpg" placeholder="ingrese su foto de perfil">
+                </div>
+                    
+                <input type="password" name="password" placeholder="Contraseña" class="texto">
+                    
+                <input type="password" name="password" placeholder=" Confirmar contraseña" class="texto">
+                <div class="texto">
+                    <a href="home"><button type="submit">Enviar</button></a>
+                    <button type="reset">Borrar</button>    
+                </div>
+                
+
+
+
+
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <div>
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <br>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </div>
+        <div>
+            <br>
+            <i class="fa-solid fa-gift"></i>
+            <h3>Envío gratis desde $ 2.500</h3>
+            <br>
+            <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                productos. Es un beneficio de Mercado Puntos.
+            </p>
+        </div>
+        <div>
+            <br>
+            <i class="fa-solid fa-user-shield"></i>
+            <h3>Seguridad, de principio a fin</h3>
+            <br>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.
+            </p>
+            <br>
+            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </div>
+       
+    </footer>
+    
+</body>
+</html>

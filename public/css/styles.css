@@ -1,0 +1,333 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+    opacity: 0%;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+article:hover .description{
+    opacity: 100%;
+}
+
+
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+article{
+    box-shadow: none;
+    transition: box-shadow 1s;
+}
+article:hover{
+    box-shadow: 5px 10px 5px #888888;
+}
+main section article i,
+.discount{
+    color: #39b54a;
+    transition-duration: 1s;
+}
+main section article:hover i{
+  transform: rotate(-90deg);
+}
+.boton{
+    transition:background-color 0.5s;
+}
+.boton:hover{
+    background-color: #0022AA;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+/*formulario*/
+form{
+
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 25%;
+    margin-left: 25%;
+    justify-content:center;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.texto{
+    width: 80%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.fecha{
+    width: 80%;
+}
+.fecha h4{
+    margin-bottom: 8px;
+}
+footer{
+    display: flex;
+    margin-top: 20px;
+
+}
+.footer-div{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+footer h3{
+    color:#666;
+}
+footer p{
+  color:#666;
+}
+footer i{
+    color:#1259c3;
+    font-size: 2em;
+    margin-bottom:10px ;
+    transition: color 1s;
+}
+footer i:hover{
+    color: green;
+}
+.copy{
+    margin-left: 10px;
+    width: 100%;
+}
+
+
+
+/* Fin formulario*/
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+}
+@media (min-width:481px){
+   
+    
+
+    .link{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .link-ul{
+        display:flex;
+        
+        
+    }
+    .link-ul li{
+        margin-right: 10px;
+    }
+}
+@media (max-width:1278px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@media(max-width:480){
+    div.burger-menu{
+        opacity: 100%;
+    }
+    nav{
+        opacity: 0%;
+    }
+}
