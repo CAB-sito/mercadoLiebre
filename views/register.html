@@ -13,15 +13,15 @@
     
     <main>
         <form action="*" method="get">
-                <input type="text" name="nombre" placeholder="Nombre y apellido" class="texto">
-                <input type="text" name="usuario" placeholder="Nombre de usuario" class="texto">
+                <input type="text" name="nombre" placeholder="Nombre y apellido" class="texto" minlength="3">
+                <input type="text" name="usuario" placeholder="Nombre de usuario" class="texto" minlength="3">
                 <input type="email" name="email" placeholder="E-mail" class="texto">
                 <div class="fecha">
                     <h4>Fecha de nacimiento</h4>
                     <input type="date" name="Fecha" placeholder="mm-dd-yyyy">
                 </div>
                 
-                <input type="text" name="domicilio" placeholder="domicilio" class="texto">
+                <input type="text" name="domicilio" placeholder="domicilio" class="texto" minlength="5">
                 <div>
                     <h4>Perfil de usuario</h4>
                     <div class="perfil">
@@ -43,11 +43,11 @@
                     <input type="file" name="foto" accept=".jpg" placeholder="ingrese su foto de perfil">
                 </div>
                     
-                <input type="password" name="password" placeholder="Contraseña" class="texto">
+                <input type="password" name="password" placeholder="Contraseña" class="texto" minlength="2">
                     
-                <input type="password" name="password" placeholder=" Confirmar contraseña" class="texto">
+                <input type="password" name="password" placeholder=" Confirmar contraseña" class="texto" minlength="2">
                 <div class="texto">
-                    <a href="home"><button type="submit">Enviar</button></a>
+                    <button type="submit">Enviar</button>
                     <button type="reset">Borrar</button>    
                 </div>
                 
